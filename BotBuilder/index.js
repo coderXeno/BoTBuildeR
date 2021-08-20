@@ -6,8 +6,8 @@ const fs=require('fs');
 const commands=[];
 const commandFiles=fs.readdirSync('./commands').filter(file=>file.endsWith("./js"));
 
-const clientId="813855250309185607";
-const guildId="873577100068675664";
+const clientId="clientId goes here";
+const guildId="guildId goes here";
 
 for(const file of commandFiles){
     const command=require(`./commands/${file}`);
